@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Linkedin, Twitter, Instagram, Youtube } from "lucide-react";
+
+import { FaXTwitter, FaTiktok, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+
 
 const footerLinks = {
   Products: [
@@ -52,18 +54,18 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { Icon: Linkedin, href: "#" },
-                { Icon: Twitter, href: "#" },
-                { Icon: Instagram, href: "#" },
-                { Icon: Youtube, href: "#" },
+                { Icon: FaLinkedinIn, href: "#" },
+                { Icon: FaXTwitter, href: "#" },
+                { Icon: FaInstagram, href: "#" },
+                { Icon: FaTiktok, href: "#" },
               ].map(({ Icon, href }, i) => (
-                <a
+                <link
                   key={i}
                   href={href}
                   className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a84c] transition-colors"
                 >
-                  <Icon className="w-4 h-4" />
-                </a>
+                  h<Icon className="w-4 h-4" />
+                </link>
               ))}
             </div>
           </div>
