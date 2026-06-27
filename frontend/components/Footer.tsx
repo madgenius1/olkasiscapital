@@ -59,13 +59,13 @@ export default function Footer() {
                 { Icon: FaInstagram, href: "#" },
                 { Icon: FaTiktok, href: "#" },
               ].map(({ Icon, href }, i) => (
-                <link
+                <a
                   key={i}
                   href={href}
                   className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a84c] transition-colors"
                 >
                   h<Icon className="w-4 h-4" />
-                </link>
+                </a>
               ))}
             </div>
           </div>
