@@ -64,7 +64,7 @@ export default function Footer() {
                   href={href}
                   className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#c9a84c] transition-colors"
                 >
-                  h<Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4" />
                 </a>
               ))}
             </div>

@@ -27,16 +27,16 @@ const navItems = [
       { label: "Financial Advisors", href: "/who-we-serve/advisors" },
     ],
   },
-  { label: "Insights", href: "/insights" },
+  // { label: "Insights", href: "/insights" },
   {
-    label: "About",
+    label: "Company",
     href: "/about",
-    children: [
-      { label: "Our Story", href: "/about" },
-      { label: "Careers", href: "/careers" },
-    ],
+    // children: [
+    //   // { label: "Our Story", href: "/about" },
+    //   // { label: "Careers", href: "/careers" },
+    // ],
   },
-  { label: "Regulatory", href: "/regulatory" },
+  // { label: "Regulatory", href: "/regulatory" },
 ];
 
 export default function Navbar() {
@@ -68,8 +68,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-8 h-8 bg-[#0a4f3c] rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
+            <div className="w-8 h-8 bg-forest rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">O</span>
             </div>
             <div>
@@ -100,7 +100,7 @@ export default function Navbar() {
                   className={cn(
                     "flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-colors",
                     scrolled || !isHome
-                      ? "text-gray-700 hover:text-[#0a4f3c] hover:bg-gray-50"
+                      ? "text-gray-700 hover:text-forest hover:bg-gray-50"
                       : "text-white/90 hover:text-white hover:bg-white/10"
                   )}
                 >
@@ -126,12 +126,12 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <Link href="/investor-relations">
-              <Button variant="ghost" size="sm" className={cn(!(scrolled || !isHome) && "text-white hover:bg-white/10")}>
+              <Button variant="ghost" size="md" className={cn(!(scrolled || !isHome) && "text-white hover:bg-white/10")}>
                 Investors
               </Button>
             </Link>
             <Link href="/products/zanari">
-              <Button size="sm">Join Waitlist</Button>
+              <Button size="md">Join Waitlist</Button>
             </Link>
           </div>
 
