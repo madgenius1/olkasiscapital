@@ -491,6 +491,7 @@ export default function HomePage() {
               className="w-full px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors"
             />
             <select
+            title="icon"
               value={waitlistForm.type}
               onChange={(e) =>
                 setWaitlistForm({ ...waitlistForm, type: e.target.value })
